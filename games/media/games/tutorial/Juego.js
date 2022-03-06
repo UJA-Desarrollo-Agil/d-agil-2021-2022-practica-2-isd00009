@@ -90,8 +90,7 @@ undum.game.situations = {
         <em>video</em> tags to include rich media.</p>\
         \
         <p class='transient'>Make sure you've carried out the action above,\
-        then <a href='hub'>return to the topic list</a>.</p>",
-        {
+        then <a href='hub'>return to the topic list</a>.</p>", {
             actions: {
                 'do-something': "<p>You carried out the action, well done.\
                                  You'll notice that the links for this\
@@ -129,8 +128,7 @@ undum.game.situations = {
         \
         <p class='transient'>The 'Different Kinds of Links' topic has more\
         about these links.\
-        Let's return to the <a href='hub'>topic list</a>.</p>",
-        {
+        Let's return to the <a href='hub'>topic list</a>.</p>", {
             heading: "Disappearing Content",
             diplayOrder: 2,
             tags: ["topic"]
@@ -172,8 +170,7 @@ undum.game.situations = {
         <a href='oneshot'>leave this situation</a>, you'll notice the\
         external link stays active. This can allow you to have options that\
         stay valid throughout the narrative, for example, such as a spell to\
-        teleport home.</p>",
-        {
+        teleport home.</p>", {
             tags: ["topic"],
             displayOrder: 3,
             heading: "Different Kinds of Links"
@@ -195,8 +192,7 @@ undum.game.situations = {
         matching links will be removed, so you don't have to worry about\
         the player having an alternative way to carry out the action.</p>\
         <p class='transient'>After you've clicked the link, let's\
-        <a href='hub'>move on</a>.</p>",
-        {
+        <a href='hub'>move on</a>.</p>", {
             actions: {
                 "one-time-action": "<p>As I said, one time actions are\
                                    mostly used to describe something in\
@@ -219,18 +215,17 @@ undum.game.situations = {
         your stamina quality. This process is animated and highlighted to\
         draw your attention to it. You could also get a boost of skill\
         by carrying out <a href='./skill-boost'>this action</a> as many\
-        times as you like.</p>",
-        {
+        times as you like.</p>", {
             heading: "Qualities and the Character",
             tags: ["topic"],
             displayOrder: 4,
             actions: {
                 "skill-boost": function(character, system, action) {
-                    system.setQuality("skill", character.qualities.skill+1);
+                    system.setQuality("skill", character.qualities.skill + 1);
                 }
             },
             exit: function(character, system, to) {
-                system.setQuality("stamina", character.qualities.stamina+1);
+                system.setQuality("stamina", character.qualities.stamina + 1);
             }
         }
     ),
@@ -256,14 +251,13 @@ undum.game.situations = {
         quality in a group is removed ('Novice' is in the 'Progress' group),\
         then the group heading is also removed. You can tell Undum what\
         group each quality belongs to, and what order they should be listed.\
-        <p>",
-        {
+        <p>", {
             actions: {
                 "luck-boost": function(character, system, action) {
-                    system.setQuality("luck", character.qualities.luck+1);
+                    system.setQuality("luck", character.qualities.luck + 1);
                 },
                 "luck-reduce": function(character, system, action) {
-                    system.setQuality("luck", character.qualities.luck-1);
+                    system.setQuality("luck", character.qualities.luck - 1);
                 }
             },
             exit: function(character, system, to) {
@@ -283,8 +277,7 @@ undum.game.situations = {
         <p class='transient'>Let's go back to the\
         <a href='hub'>topic list</a>. As you do, I'll change the\
         character text. Notice that it is highlighted, just the same as\
-        when a quality is altered.</p>",
-        {
+        when a quality is altered.</p>", {
             exit: function(character, system, to) {
                 system.setCharacterText(
                     "<p>We're nearing the end of the road.</p>"
@@ -298,8 +291,7 @@ undum.game.situations = {
         quality. If you <a href='./boost-stamina-action'>boost your\
         stamina</a>, you will see the stamina change in the normal\
         way in the character panel. But you will also see a progress\
-        bar appear and animate below.</p>",
-        {
+        bar appear and animate below.</p>", {
             tags: ["topic"],
             heading: "Showing a Progress Bar",
             displayOrder: 5,
@@ -315,7 +307,7 @@ undum.game.situations = {
             },
             exit: function(character, system, to) {
                 system.animateQuality(
-                    'stamina', character.qualities.stamina+1
+                    'stamina', character.qualities.stamina + 1
                 );
             }
         }
@@ -335,7 +327,7 @@ undum.game.situations = {
         of the permanent record of the game, then write it in text.</p>\
         \
         <p>Let's <a href='hub'>return to the topic list.</a></p>"
-        ),
+    ),
     // Again, we'll retrieve the text we want from the HTML file.
     "saving": new undum.Situation({
         enter: function(character, system, from) {
@@ -348,11 +340,10 @@ undum.game.situations = {
 
     "implicit-boost": new undum.SimpleSituation(
         "<p>Your luck has been boosted<span class='transient'>, check the\
-        list of options to see if they have changed</span>.</p>",
-        {
+        list of options to see if they have changed</span>.</p>", {
             tags: ["example"],
             enter: function(character, system, from) {
-                system.animateQuality("luck", character.qualities.luck+1)
+                system.animateQuality("luck", character.qualities.luck + 1)
                 system.doLink('example-choices');
             },
             optionText: "Boost Your Luck",
@@ -364,11 +355,10 @@ undum.game.situations = {
     ),
     "implicit-drop": new undum.SimpleSituation(
         "<p>Your luck has been reduced<span class='transient'>, check the\
-        list of options to see if they have changed</span>.</p>",
-        {
+        list of options to see if they have changed</span>.</p>", {
             tags: ["example"],
             enter: function(character, system, from) {
-                system.animateQuality("luck", character.qualities.luck-1)
+                system.animateQuality("luck", character.qualities.luck - 1)
                 system.doLink('example-choices');
             },
             optionText: "Reduce Your Luck",
@@ -381,8 +371,7 @@ undum.game.situations = {
     "high-luck-only": new undum.SimpleSituation(
         "<p>Your luck is higher than 'fair'. The link to this \
         situation would not\
-        have appeared if it were lower.</p>",
-        {
+        have appeared if it were lower.</p>", {
             tags: ["example"],
             enter: function(character, system, from) {
                 system.doLink('example-choices');
@@ -398,8 +387,7 @@ undum.game.situations = {
         "<p>Your luck is lower than 'fair'. The link to this situation \
         appears whether\
         it is low or high, but can only be chosen if it is low. It does this\
-        by defining a <em>canChoose</em> method.</p>",
-        {
+        by defining a <em>canChoose</em> method.</p>", {
             tags: ["example"],
             enter: function(character, system, from) {
                 system.doLink('example-choices');
@@ -422,8 +410,7 @@ undum.game.situations = {
         <p>I've added an\
         inspiration quality to your character list. Its time for you to\
         crack open the game file and write your own story.</p>\
-        <h1>The End</h1>",
-        {
+        <h1>The End</h1>", {
             tags: ["topic"],
             optionText: "Finish the Tutorial",
             displayOrder: 8,
@@ -447,21 +434,20 @@ undum.game.start = "start";
  * that quality will never show up in the character bar in the UI. */
 undum.game.qualities = {
     skill: new undum.IntegerQuality(
-        "Skill", {priority:"0001", group:'stats'}
+        "Skill", { priority: "0001", group: 'stats' }
     ),
     stamina: new undum.NumericQuality(
-        "Stamina", {priority:"0002", group:'stats'}
+        "Stamina", { priority: "0002", group: 'stats' }
     ),
     luck: new undum.FudgeAdjectivesQuality( // Fudge as in the FUDGE RPG
-        "<span title='Skill, Stamina and Luck are reverently borrowed from the Fighting Fantasy series of gamebooks. The words representing Luck are from the FUDGE RPG. This tooltip is illustrating that you can use any HTML in the label for a quality (in this case a span containing a title attribute).'>Luck</span>",
-        {priority:"0003", group:'stats'}
+        "<span title='Skill, Stamina and Luck are reverently borrowed from the Fighting Fantasy series of gamebooks. The words representing Luck are from the FUDGE RPG. This tooltip is illustrating that you can use any HTML in the label for a quality (in this case a span containing a title attribute).'>Luck</span>", { priority: "0003", group: 'stats' }
     ),
 
     inspiration: new undum.NonZeroIntegerQuality(
-        "Inspiration", {priority:"0001", group:'progress'}
+        "Inspiration", { priority: "0001", group: 'progress' }
     ),
     novice: new undum.OnOffQuality(
-        "Novice", {priority:"0002", group:'progress', onDisplay:"&#10003;"}
+        "Novice", { priority: "0002", group: 'progress', onDisplay: "&#10003;" }
     )
 };
 
@@ -472,8 +458,8 @@ undum.game.qualities = {
  * the end. It is an error to have a quality definition belong to a
  * non-existent group. */
 undum.game.qualityGroups = {
-    stats: new undum.QualityGroup(null, {priority:"0001"}),
-    progress: new undum.QualityGroup('Progress', {priority:"0002"})
+    stats: new undum.QualityGroup(null, { priority: "0001" }),
+    progress: new undum.QualityGroup('Progress', { priority: "0002" })
 };
 
 // ---------------------------------------------------------------------------
