@@ -20,7 +20,18 @@ jQuery.fx.off = false
 
 /* The situations that the game can be in. Each has a unique ID. */
 undum.game.situations = {
-    start: new undum.SimpleSituation(
+    comienzo: new undum.SimpleSituation(
+        "<h1>Tu cuarto</h1>\
+        	<p> Suena el despertador a las 7:30, después de haber dormido apenas 5 horas, ya que estuviste toda la noche dandole vueltas al partido de hoy.\
+				Tras perder 5 minutos en Twitter, tienes que decidir entre <a href='ducha'>ducharte</a> o <a href='desayuno'>desayunar</a> para no llegar tarde a la clase de Desarrollo Ágil</p>"
+    ),
+    ducha: new undum.SimpleSituation(
+
+    ),
+    desayuno: new undum.SimpleSituation(
+
+    ),
+    /*start: new undum.SimpleSituation(
         "<h1>La puerta del castillo</h1>\
 				<p>Acabas de llegar a Roca Casterly.</p>", {
             enter: function(character, system, from) {
@@ -28,7 +39,7 @@ undum.game.situations = {
             }
 
         }
-    ),
+    ),*/
     santoysenia: new undum.SimpleSituation(
         "<p>El castillo está cerrado a cal y canto... aunque te piden el santo y seña:</p>\
 				<p class='dialogo'>- ¿Cuánto son 3+4?</p>\
@@ -325,7 +336,7 @@ undum.game.situations["calabozo"] = new undum.SimpleSituation(
 
 // ---------------------------------------------------------------------------
 /* The Id of the starting situation. */
-undum.game.start = "start";
+undum.game.start = "comienzo";
 
 // ---------------------------------------------------------------------------
 /* Here we define all the qualities that our characters could
