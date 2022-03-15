@@ -6,11 +6,16 @@ Esta práctica consiste en crear un juevo conversiacional con Undum. Se desarrol
 * Desarrollo Ágil, Grado en Ingeniería Informática, Universidad de Jaén.
 * Curso 2021/2022
 
+# Motivación
+
+Conocer y aprender a utilizar la herramienta Undum para el desarrollo de juegos conversacionales.
+
 # Índice
 
  1. [Título y descripción del juego](#i1)
  2. [Escenarios del juego](#i2)
  3. [Tablero de Trello](#i3)
+ 4. [Vinculación repositorio con Telegram](#i4)
 
 
 # Título y descripción del juego<a name="i1"></a> 
@@ -39,3 +44,6 @@ La URL del tablero de Trello es: https://trello.com/b/35PzU5pI/pr%C3%A1ctica-2-d
 
 ## Tercera captura de Trello:
  <img src="https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-2-isd00009/blob/master/games/media/img/Captura%203.png" alt="cap1" style="max-width: 100%;">
+ 
+# Vinculación repositorio con Telegram<a name="i4"></a> 
+ <img src="https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-2-isd00009/blob/master/games/media/img/Captura%20Telegram.png" alt="cap1" style="max-width: 100%;">
