@@ -8,17 +8,17 @@ Esta práctica consiste en crear un juevo conversiacional con Undum. Se desarrol
 
 # Índice
 
- 1. Título y descripción del juego
- 2. Escenarios del juego
- 3. Tablero de Trello
+ 1. [Título y descripción del juego](#i1)
+ 2. [Escenarios del juego](#i2)
+ 3. [Tablero de Trello](#i3)
 
 
-# Título y descripción del juego 
+# Título y descripción del juego<a name="i1"></a> 
 
 ##  La liberación de Mbappé
 En este juego eres un estudiante de Ingeniería Informática apasionado por el fútbol y por el Real Madrid. Comienzas en tu habitación, el 9 de marzo de 2022, día del partido de vuelta del PSG - Real Madrid y tu misión es que Mbappé logre ser jugador del Real Madrid a través de tus acciones.
 
-# Escenarios
+# Escenarios<a name="i2"></a> 
 
  - **Tu habitación:** Aquí comienza la historia. 
  - **Clase de prácticas:** Aquí irás a las prácticas de Desarrollo Ágil como cada miércoles.
@@ -27,7 +27,7 @@ En este juego eres un estudiante de Ingeniería Informática apasionado por el f
  - **Estadio Santiago Bernabéu:** Aquí transcurrirá el partido entre el Real Madrid y PSG.
  - **Calle de Madrid:** Aquí te encontrarás con gente un tanto peculiar.
 
-# Tablero de Trello
+# Tablero de Trello<a name="i3"></a> 
 
 La URL del tablero de Trello es: https://trello.com/b/35PzU5pI/pr%C3%A1ctica-2-da
 
